@@ -1,5 +1,11 @@
-<h1>Create Post.</h1>
-<hr />
-<label for="post-create">What is on your mind?</label>
-<textarea name="post-create" cols="30" rows="10"></textarea>
-<button>Save Post</button>
+<div>
+  <h1>Create Post.</h1>
+  <label for="post-create">What is on your mind?</label>
+  <textarea name="post-create" cols="30" rows="10" [value]="post"></textarea>
+  <button (click)="onSavePost()">Save Post</button>
+</div>
+
+<div>
+  <h1>The Post.</h1>
+  <p>{{ post }}</p>
+</div>

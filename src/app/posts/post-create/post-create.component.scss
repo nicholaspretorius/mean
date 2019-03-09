@@ -2,8 +2,13 @@
 
 :host {
   display: flex;
-  flex-direction: column;
-  max-width: 500px;
+  flex-direction: row;
+  justify-content: space-around;
+
+  & > div {
+    max-width: 500px;
+    min-width: 500px;
+  }
 }
 
 label {

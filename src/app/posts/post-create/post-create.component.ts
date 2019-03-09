@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./post-create.component.scss']
 })
 export class PostCreateComponent {
+  post = '';
+
   constructor() {}
+
+  onSavePost() {
+    this.post = 'Testing this!';
+    console.log(this.post);
+  }
 }
