@@ -7,11 +7,12 @@ import { Component } from '@angular/core';
 })
 export class PostCreateComponent {
   post = '';
+  newPost = '';
 
   constructor() {}
 
   onSavePost() {
-    this.post = 'Testing this!';
+    this.post = this.newPost;
     console.log(this.post);
   }
 }

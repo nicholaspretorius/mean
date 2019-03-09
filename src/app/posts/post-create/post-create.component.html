@@ -1,7 +1,12 @@
 <div>
   <h1>Create Post.</h1>
   <label for="post-create">What is on your mind?</label>
-  <textarea name="post-create" cols="30" rows="10" [value]="post"></textarea>
+  <textarea
+    name="post-create"
+    cols="30"
+    rows="10"
+    [(ngModel)]="newPost"
+  ></textarea>
   <button (click)="onSavePost()">Save Post</button>
 </div>
 
