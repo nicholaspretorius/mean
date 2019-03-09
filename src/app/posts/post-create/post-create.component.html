@@ -1,16 +1,21 @@
-<div>
+<mat-card>
   <h1>Create Post.</h1>
-  <label for="post-create">What is on your mind?</label>
-  <textarea
-    name="post-create"
-    cols="30"
-    rows="10"
-    [(ngModel)]="newPost"
-  ></textarea>
-  <button (click)="onSavePost()">Save Post</button>
-</div>
+  <mat-form-field>
+    <label for="post-create">What is on your mind?</label>
+    <textarea
+      matInput
+      name="post-create"
+      cols="30"
+      rows="10"
+      [(ngModel)]="newPost"
+    ></textarea>
+  </mat-form-field>
+  <button color="primary" mat-raised-button (click)="onSavePost()">
+    Save Post
+  </button>
+</mat-card>
 
-<div>
+<mat-card>
   <h1>The Post.</h1>
   <p>{{ post }}</p>
-</div>
+</mat-card>
