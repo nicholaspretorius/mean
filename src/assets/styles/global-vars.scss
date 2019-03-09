@@ -24,3 +24,15 @@ button {
   text-transform: uppercase;
   cursor: pointer;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+mat-card {
+  margin: 0.5rem 0;
+}

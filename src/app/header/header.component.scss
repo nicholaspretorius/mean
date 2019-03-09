@@ -1,7 +1,12 @@
 .mat-toolbar {
   margin-bottom: 2rem;
+
+  & > span {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
 
 .mat-toolbar-single-row {
-  justify-content: center;
+  justify-content: left;
 }
