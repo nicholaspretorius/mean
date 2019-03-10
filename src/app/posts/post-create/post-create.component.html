@@ -2,11 +2,12 @@
   <h1>Create Post.</h1>
   <form (submit)="onSavePost(postForm)" #postForm="ngForm">
     <mat-form-field>
-      <label for="postTitle">Post Title</label>
+      <!-- <label for="postTitle">Post Title</label> -->
       <input
         matInput
         type="text"
         name="postTitle"
+        placeholder="Post Title"
         ngModel
         required
         #title="ngModel"
@@ -14,10 +15,11 @@
       <mat-error *ngIf="title.invalid">Please enter a post title</mat-error>
     </mat-form-field>
     <mat-form-field>
-      <label for="postContent">Post Content</label>
+      <!-- <label for="postContent">Post Content</label> -->
       <textarea
         matInput
         name="postContent"
+        placeholder="Post Content"
         cols="30"
         rows="5"
         ngModel
